@@ -18,7 +18,4 @@
   | Week One| Dialog Box, Name, Numbers |This week we went over comparing names, numbers in Java|
   | Week Two | x,y,z |hello world|
   
-  <h3 align = "left" > Language and Tools: </h3>  
-  <p align = "left"> 
-    <a herf: "https://github.com/devicons/devicon/blob/master/icons/intellig/intellij-original-wordmark.sg*" target = "blank" rel = "noreferrer"><  </a>
-  </p>
+  
