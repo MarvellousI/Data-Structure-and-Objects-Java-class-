@@ -1,0 +1,12 @@
+<record>
+    <user id="1">
+        <username>john_doe</username>
+        <email>john.doe@example.com</email>
+        <followers>1000</followers>
+    </user>
+    <user id="2">
+        <username>jane_smith</username>
+        <email>jane.smith@example.com</email>
+        <followers>1500</followers>
+    </user>
+</record>

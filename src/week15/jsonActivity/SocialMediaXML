@@ -1,0 +1,45 @@
+package XMLActivity;
+
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+import org.w3c.dom.*;
+
+public class SocialMediaXML {
+    public static void main(String[] args) {
+        try {
+            // Parse the XML file
+            DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+            DocumentBuilder builder = factory.newDocumentBuilder();
+            Document doc = builder.parse("socialMediaUser.xml");
+
+            // Normalize XML structure
+            doc.getDocumentElement().normalize();
+            System.out.println("Root element: " + doc.getDocumentElement().getNodeName());
+
+            // Get all user elements
+            NodeList userList = doc.getElementsByTagName("user");
+            for (int i = 0; i < userList.getLength(); i++) {
+                Node userNode = userList.item(i);
+
+                if (userNode.getNodeType() == Node.ELEMENT_NODE) {
+                    Element userElement = (Element) userNode;
+
+                    // Read attributes and child elements
+                    String id = userElement.getAttribute("id");
+                    String username = userElement.getElementsByTagName("username").item(0).getTextContent();
+                    String email = userElement.getElementsByTagName("email").item(0).getTextContent();
+                    String followers = userElement.getElementsByTagName("followers").item(0).getTextContent();
+
+                    // Print user data
+                    System.out.println("User ID: " + id);
+                    System.out.println("Username: " + username);
+                    System.out.println("Email: " + email);
+                    System.out.println("Followers: " + followers);
+                    System.out.println();
+                }
+            }
+        } catch (Exception e) {
+            System.out.println("Error parsing XML file: " + e.getMessage());
+        }
+    }
+}
