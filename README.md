@@ -4,5 +4,5 @@
 
 
 - 🤺 I'm currently working on .[Project 3 package ].
-  (https://github.com/MarvellousI/Data-Structure-and-Objects-Java-class-/tree/43d2d035565a23860c64b3628d36cd29382d8898/src/projectOne).
+  (https://github.com/MarvellousI/Data-Structure-and-Objects-Java-class-/tree/43d2d035565a23860c64b3628d36cd29382d8898/src/project3).
     
